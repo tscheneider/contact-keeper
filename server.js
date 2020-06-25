@@ -30,9 +30,9 @@ app.use(express.json({ extended: false }));
   Parametro (req, res) - é uma função com dois argumentos: req e res
   req - representa a solicitação que foi enviada ao servidor (pode ser usado para ler os dados que estão sendo requisitados)
   res - representa a resposta que enviaremos de volta ao cliente. */
-app.get("/", (req, res) =>
+/* app.get("/", (req, res) =>
   res.json({ msg: "Bem vindo a API ContactKeeper..." })
-);
+); */
 
 //Define as rotas elas são requeridas sa pasta routes
 app.use("/api/users", require("./routes/users"));
